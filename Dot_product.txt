@@ -1,0 +1,26 @@
+PROCEDURE DotProduct(arr1 , arr2)
+BEGIN
+    p=0 
+    FOR i FROM 0 TO arr1,arr2.length STEP 1 DO
+            p = p + arr1[i] * arr2 [i]
+    END_FOR  
+
+    write(p)
+END
+
+VAR
+    v1  : ARRAY_OF INTEGER [length];
+    v2  : ARRAY_OF INTEGER [length];
+    i   : INTEGER ;
+    p   : INTEGER ;
+BEGIN
+    FOR i FROM 0 TO v1.length STEP 1  DO
+        write ("write element",i+1,"v1")
+        read (v1[i])
+        write ("write element",i+1,v2)
+        read (v2[i])
+    END_FOR
+    
+DotProduct(v1, v2)
+
+END
